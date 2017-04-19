@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Flickr Gallery",
+  "description": "Make Flickr gallery from current tab",
+  "version": "2.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Make Flickr gallery from current tab"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.flickr.com/photos/128947481@N05/*"],
+      "js": ["injection.js"]
+    }
+  ]
+}
