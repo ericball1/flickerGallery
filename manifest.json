@@ -17,7 +17,8 @@
   "content_scripts": [
     {
       "matches": ["*://www.flickr.com/photos/128947481@N05/*"],
-      "js": ["injection.js"]
+      "js": ["injection.js"],
+      "run-at": "document_end"
     }
   ]
 }
