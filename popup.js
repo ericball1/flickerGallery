@@ -9,6 +9,10 @@ chrome.tabs.query({
   document.getElementById("ID").value = wordpressCode;
   document.getElementById("ID").select();
   getTitle();
+  if (neededURL.indexOf("flickr") == -1) {
+    document.getElementById("noFlickr").style.display = "inline";
+    document.getElementById("main").style.display = "none";
+  }
 });
 
 function getTitle() {

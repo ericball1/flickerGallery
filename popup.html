@@ -6,12 +6,15 @@
   </head>
   <body>
     <div class="container">
-      <p>Copy the text into Wordpress</p>
-      <p>Album Title: <span id="album-title"></span></p>
-      <div class="well">
-        <textarea rows="6" cols="50" type="text" id="ID"></textarea>
+      <h3 id="noFlickr" style="display: none; white-space: nowrap;"><span class="glyphicon glyphicon-warning-sign"></span> You are not in a Flickr gallery! <span class="glyphicon glyphicon-warning-sign"></span></h3>
+      <div id="main">
+        <p>Copy the text into Wordpress</p>
+        <p>Album Title: <span id="album-title"></span></p>
+        <div class="well">
+          <textarea rows="6" cols="50" type="text" id="ID"></textarea>
+        </div>
+        <p>Ctrl+C to Copy!</p>
       </div>
-      <p>Ctrl+C to Copy!</p>
     </div>
     <script src="popup.js"></script>
   </body>
